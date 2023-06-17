@@ -1,10 +1,11 @@
 // complete the given function
 
 function palindrome(str){
+	const string=str.toUpperCase();
 	let start=0;
-	let end=str.length-1;
+	let end=string.length-1;
 	while(start<=end){
-		if(str.charAt(start)!= str.charAt(end)){
+		if(string.charAt(start)!= string.charAt(end)){
 			return false;
 		}
 		start++;
